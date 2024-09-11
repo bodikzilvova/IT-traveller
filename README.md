@@ -1,35 +1,14 @@
-# it-traveler
+# IT Traveler
 
-This template should help get you started developing with Vue 3 in Vite.
+**IT Traveler** is a web application designed to help users mark their favorite places or spots they want to visit on a map. Built with a modern tech stack, the application allows users to register, log in, and interact with a dynamic map interface.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Map Integration**: Utilizes Mapbox to display interactive maps where users can pinpoint and manage locations.
+- **User Authentication**: Includes registration and login functionality to manage user accounts and their data.
 
-## Customize configuration
+## Technologies Used
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- **Vue.js**: For building the interactive user interface.
+- **Tailwind CSS**: For styling.
+- **Mapbox**: For rendering the map and handling geographic data.
