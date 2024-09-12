@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { authService } from '@/api/authService'
 
 import GretingPage from '@/views/GreetingView.vue'
@@ -22,7 +22,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createWebHistory('/IT-traveller/'),
+  history: createWebHashHistory('/IT-traveller/'),
   routes
 })
 
