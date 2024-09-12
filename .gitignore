@@ -31,3 +31,7 @@ coverage
 
 #map api token
 /src/map/token.js 
+
+# Environment variables
+.env
+.env.*
