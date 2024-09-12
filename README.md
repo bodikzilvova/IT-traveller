@@ -12,3 +12,7 @@
 - **Vue.js**: For building the interactive user interface.
 - **Tailwind CSS**: For styling.
 - **Mapbox**: For rendering the map and handling geographic data.
+
+## Troubleshooting
+
+If you encounter issues while using the site, try clearing your browser's history or cache. This often resolves problems related to outdated or corrupted data.

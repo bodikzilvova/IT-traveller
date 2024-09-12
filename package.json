@@ -1,7 +1,6 @@
 {
   "name": "it-traveler",
   "version": "0.0.0",
-  "homepage": "https://bodikzilvova.github.io/IT-traveller",
   "private": true,
   "type": "module",
   "scripts": {
