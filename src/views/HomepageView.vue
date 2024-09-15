@@ -70,8 +70,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="flex h-screen">
-    <div class="relative bg-white h-full w-[400px] shrink-0 overflow-auto pb-10">
+  <main class="flex flex-col sm:flex-row h-screen overflow-auto">
+    <div class="relative bg-white sm:h-full w-full sm:w-[400px] shrink-0 overflow-auto pb-10">
       <UserInfo />
       <div v-if="isPlacesLoading" class="text-black px-6">Loading...</div>
       <FavoritePlaces
@@ -82,9 +82,7 @@ onMounted(() => {
         @create="openModal"
         @updated="getPlaces"
       />
-
       <LogoutButton class="mt-10" />
-
       <CreateNewPlaceModal
         :is-open="isOpen"
         :is-loading="isAddingPlace"
@@ -93,7 +91,7 @@ onMounted(() => {
         @submit="handleAddPlace"
       />
     </div>
-    <div class="w-full h-full flex items-center justify-center text-6xl">
+    <div class="w-full h-screen sm:h-full flex items-center justify-center text-6xl">
       <MapboxMap
         class="w-full h-full"
         :center="[30.523333, 50.450001]"
@@ -101,7 +99,7 @@ onMounted(() => {
         :access-token="mapSettings.apiToken"
         :map-style="mapSettings.style"
         @mb-click="handleMapClick"
-        @mb-created="(mapInstane) => (map = mapInstane)"
+        @mb-created="(mapInstance) => (map = mapInstance)"
       >
         <MapboxMarker v-if="mapMarkerLngLat" :lngLat="mapMarkerLngLat" anchor="bottom">
           <MarkerIcon class="h-8 w-8" is-active="isActive" />
